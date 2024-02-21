@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- You can link your CSS file here if you have one -->
+</head>
+<body>
+    <header>
+    
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news_publications.html">News & Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Blog Post Title</h2>
+    	    <a href="im_methods.html" class="btn">Intrinsic Motivation Methods</a>
+            <p>Here is the content of your blog post. You can write about your research, experiences, insights, or anything else you'd like to share with your audience.</p>
+        </article>
+
+        <!-- You can add more articles for additional blog posts -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jessica Nicholson</p>
+    </footer>
+</body>
+</html>
+

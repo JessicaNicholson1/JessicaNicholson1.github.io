@@ -5,25 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <!-- You can link your CSS file here if you have one -->
+    <style>
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+        .header-container img {
+            width: 250px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%;
+            margin-right: 20px; /* Add some spacing between image and text */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Blog</h1>
+        <div class="header-container">
+            <img src="nacho.png" alt="Jessica Nicholson">
+            <h1>Jess's Blog</h1>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news_publications.html">News & Publications</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
+            <p>Below you can find blog posts that cover various topics within Reinforcement Learning.</p>
         </nav>
     </header>
 
     <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>Here is the content of your blog post. You can write about your research, experiences, insights, or anything else you'd like to share with your audience.</p>
-        </article>
-
+   <article>
+        <a href="im_methods.html" class="btn">Intrinsic Motivation Methods</a>
+        <p>This blog post explores the concept of intrinsic motivation in reinforcement learning and its various methods.</p>
+    </article>
+    
+    <article>
+        <a href="vae_rl.html" class="btn">Reinforcement Learning with VAEs</a>
+        <p>This blog post discusses the application of Variational Autoencoders (VAEs) in reinforcement learning tasks.</p>
+    </article>
+    
+    <article>
+        <a href="diffusion_rl.html" class="btn">Reinforcement Learning with Diffusion Models</a>
+        <p>This blog post explores the use of diffusion models in reinforcement learning and their advantages.</p>
+    </article>
+            
+    <article>
+        <a href="transformer_rl.html" class="btn">Reinforcement Learning with Transformers</a>
+        <p>This blog post discusses the application of Transformers in reinforcement learning tasks and their benefits.</p>
+    </article>
         <!-- You can add more articles for additional blog posts -->
     </main>
 
@@ -32,3 +86,4 @@
     </footer>
 </body>
 </html>
+

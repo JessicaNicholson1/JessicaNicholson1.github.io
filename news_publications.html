@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Publications</title>
+    <title>Jess's Blog Posts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
     <style>
-        .header-container {
-            display: flex;
-            align-items: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .header-container img {
-            width: 250px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%;
-            margin-right: 20px; /* Add some spacing between image and text */
-        }
-
-        main {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
-
-        article {
-            margin-bottom: 20px;
+        h1 {
+            color: #333;
         }
-
+        p {
+            color: ##a5d8e8;
+            font-size: 18px;
+        }
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -32,43 +33,47 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #0056b3;
         }
+        #about .container {
+            text-align: left; /* Align content within the #about section to the left */
+        }
     </style>
-    <!-- You can link your CSS file here if you have one -->
 </head>
+
 <body>
-    <header>
-     <div class="header-container">
-            <img src="nacho3.png" alt="Jessica Nicholson">
-        <h1> Jess's News & Publications</h1>
-        </div>
+    
+    <div class="container">
+        <img src="nacho2.png" alt="Nacho" style="width: 500px; height: 350px; border-radius: 50%;">
+        <h1> News & Publications</h1>
+            <p>Below you can find my latest news and publications.</p>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news_publications.html">News & Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </nav>
-    </header>
+         <a href="index.html" class="btn">Home</a>
+        <a href="blog.html" class="btn">Blog</a>
+        <a href="cv.html" class="btn">CV</a>
+    </div>
+    
+<section id="about" style="background-color: #ddd; padding: 50px 0; }" >
+    <div class="container">
+    
+        <main>
+        <h2>News:</h2>
+        <ul>
+        <li> Attended <a href="https://www.m2lschool.org/">Mediterranean Machine Learning Summer School</a> in 2022  </li>
+        </ul>
 
-    <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>Here is the content of your blog post. You can write about your research, experiences, insights, or anything else you'd like to share with your audience.</p>
-        </article>
-
+        
+        <h3>Publications:</h3>
+    <ul>
+        <li></li>
+    </ul>
         <!-- You can add more articles for additional blog posts -->
     </main>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Jessica Nicholson</p>
-    </footer>
 </body>
 </html>
 

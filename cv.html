@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Jess's Blog Posts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
     <style>
-        .header-container {
-            display: flex;
-            align-items: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .header-container img {
-            width: 250px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%;
-            margin-right: 20px; /* Add some spacing between image and text */
-        }
-
-        main {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
-
-        article {
-            margin-bottom: 20px;
+        h1 {
+            color: #333;
         }
-
+        p {
+            color: ##a5d8e8;
+            font-size: 18px;
+        }
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -32,42 +33,39 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #0056b3;
         }
+        #about .container {
+            text-align: left; /* Align content within the #about section to the left */
+        }
     </style>
-    <!-- You can link your CSS file here if you have one -->
 </head>
+
 <body>
-    <header>
-     <div class="header-container">
-            <img src="nacho2.png" alt="Jessica Nicholson">
-            <h1>Jess's CV </h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news_publications.html">News & Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
     
-    <embed src="Jessica_Nicholson_PhD_Student.pdf" type="application/pdf" width="100%" height="600px">
+    <div class="container">
+        <img src="nacho3.png" alt="Nacho" style="width: 500px; height: 350px; border-radius: 50%;">
+        <h1>CV </h1>
+
+         <a href="index.html" class="btn">Home</a>
+	 <a href="blog.html" class="btn">Blog</a>
+        <a href="news_publications.html" class="btn">News & Publications</a>
+
+    </div>
+    
+<section id="about" style="background-color: #ddd; padding: 50px 0; }" >
+    <div class="container">
+    
+        <main>
+   <embed src="Jessica_Nicholson_PhD_Student.pdf" type="application/pdf" width="100%" height="600px">
     
     <p>If you cannot view the PDF, you can <a href="your_pdf_file.pdf">download it here</a>.</p>
     </main>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Jessica Nicholson</p>
-    </footer>
 </body>
 </html>
 

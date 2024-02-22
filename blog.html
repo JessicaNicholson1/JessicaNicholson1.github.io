@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <!-- You can link your CSS file here if you have one -->
+    <title>Jess's Blog Posts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
     <style>
-        .header-container {
-            display: flex;
-            align-items: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .header-container img {
-            width: 250px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%;
-            margin-right: 20px; /* Add some spacing between image and text */
-        }
-
-        main {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
-
-        article {
-            margin-bottom: 20px;
+        h1 {
+            color: #333;
         }
-
+        p {
+            color: ##a5d8e8;
+            font-size: 18px;
+        }
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -33,32 +33,33 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #0056b3;
         }
+        #about .container {
+            text-align: left; /* Align content within the #about section to the left */
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <div class="header-container">
-            <img src="nacho.png" alt="Jessica Nicholson">
-            <h1>Jess's Blog</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news_publications.html">News & Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
+    
+    <div class="container">
+        <img src="nacho.png" alt="Nacho" style="width: 500px; height: 350px; border-radius: 50%;">
+        <h1>Blog Posts</h1>
             <p>Below you can find blog posts that cover various topics within Reinforcement Learning.</p>
-        </nav>
-    </header>
 
-    <main>
+         <a href="index.html" class="btn">Home</a>
+        <a href="news_publications.html" class="btn">News & Publications</a>
+        <a href="cv.html" class="btn">CV</a>
+    </div>
+    
+<section id="about" style="background-color: #ddd; padding: 50px 0; }" >
+    <div class="container">
+    
+        <main>
    <article>
         <a href="im_methods.html" class="btn">Intrinsic Motivation Methods</a>
         <p>This blog post explores the concept of intrinsic motivation in reinforcement learning and its various methods.</p>
@@ -80,10 +81,8 @@
     </article>
         <!-- You can add more articles for additional blog posts -->
     </main>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Jessica Nicholson</p>
-    </footer>
 </body>
 </html>
 
